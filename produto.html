@@ -6,6 +6,7 @@
 		<title>Mirror Fashion</title>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/produto.css">
     </head>
     <body>
         <header class="container header">
@@ -27,7 +28,11 @@
 				</ul>				
 			</nav>
 		</header>
-            <form>
+		<div class="produto">
+			<h1>Fuzzi Cardigan</h1>
+			<p>por apenas R$ 129,90</p>
+			
+			<form>
                 <fieldset class="cores">
                     <legend>Escolha a cor:</legend>
                 
@@ -42,13 +47,14 @@
                     </label>
 
                     <input type="radio" name="cor" value="azul" id="azul">
-                    <label>
-                        <img src="img/produtos/foto1-azul.png" id="auzul">
+                    <label for="azul">
+                        <img src="img/produtos/foto1-azul.png" id="azul">
                     </label>
                 </fieldset>
 
                 <button class="comprar">Comprar</button>
             </form>
+		</div>
         <footer>
 			<!-- Contaúdo do rodapé -->
 			<div class="container">
