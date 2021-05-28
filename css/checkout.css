@@ -1,3 +1,6 @@
+body {
+  padding-top: 55px;
+}
 .form-control:invalid {
   border: 1px solid #CC0000;
 }
