@@ -139,6 +139,32 @@ body {
 	text-indent: -9999px;
 }
 
+/*Configurações dos banners*/
+.destaque {
+	position: relative;
+}
+
+.pause,
+.play {
+	display: block;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+.pause {
+	border-left: 10px solid #900;
+	border-right: 10px solid #900;
+	height: 30px;
+	width: 5px;
+}
+
+.play {
+	border-left: 25px solid #900;
+	border-bottom: 15px solid transparent;
+	border-top: 15px solid transparent;
+}
+
 /*Configurações dos painéis*/
 
 .painel {
@@ -285,6 +311,11 @@ footer .container {
 	.banner-destaque img{
 		margin-right: 0;
 		width: 100%
+	}
+
+	.pause,
+	.play {
+		display: none;
 	}
 
 	.painel {
