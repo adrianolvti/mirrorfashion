@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Teste</title>
         <link	rel="stylesheet" href="css/open-iconic-bootstrap.css">
         <meta name="viewport" content="width=device-width">
         <link	rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/jquery.js" type="text/javascript"></script>
     </head>
     <body>
+        <h1>Teste</h1>
         <form>
+            <p>teste</p>
             <fieldset>
                 <leged>Dados pessoais</leged>
 
-                <div class="form-group">
+                <div class="form-group nome" id="teste">
                     <label for="nome">Nome completo</label>
                     <input type="text" class="form-control" id="nome" name="nome">
                 </div>
@@ -38,5 +41,10 @@
             </fieldset>
             
         </form>
+        <script>
+            $(function() {
+                $(p).css({"backgorund-color":"#000000"});
+            })
+        </script>
     </body>
 </html>

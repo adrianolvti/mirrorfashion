@@ -221,6 +221,67 @@ body {
 	text-shadow: 3px 2px 2px rgba(255, 255, 255, 0.8);
 }
 
+.painel li:nth-child(n+7) {
+	display:none;
+}
+
+.painel-aberto li:nth-child(n+7){
+	display: inline-block;
+}
+
+.painel button {
+	/* posicionamento */
+	float: right;
+	margin-right: 10px;
+	padding: 10px;
+	position: relative;
+	margin-bottom: 10px;
+
+	/* estilo */
+	background-color: #333333;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px rgba(30, 30, 30, 0.5);
+	color: #ffffff;
+	font-size: 1em;
+	text-decoration: none;
+	text-shadow: 1px 0 1px #000000;
+
+	/* animação */
+	transition: 0.3s;
+}
+
+.painel button:hover {
+	background-color: #393939;
+	box-shadow: 1px 0 20px rgba(200, 200, 120, 0.9);
+}
+
+.painel button::after {
+	/* elemento vazio */
+	content: '';
+	display: block;
+	height: 0;
+	width: 0;
+
+	/* reiângulo */
+	border-top: 10px solid #333;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+	/* posicionamento */
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+
+	/* animação */
+	transition: 0.3s;
+}
+
+.painel button:hover::after {
+	border-top-color: #393939;
+}
+
 .novidades {
 	background: linear-gradient(45deg,	#FDBDBD 0%,	#CF5353 90%,	#9E1818 100%);
 }
@@ -229,6 +290,8 @@ body {
 	background: linear-gradient(45deg,	#BEE5FF 0%,	#66BBF0 47%,	#0B3D5C 100%);
 	
 }
+
+
 
 /*---------------- Configurações do Footer ---------------*/
 footer {
